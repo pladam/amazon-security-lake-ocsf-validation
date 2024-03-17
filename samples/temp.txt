@@ -11,25 +11,45 @@ numbers are equal to floats
 integers can work with 64 and 32 bit preceision
 
 exclude attributes/objects if not relevant profile is applied 
-{
-  "type": "object",
-  "properties": {
-    "profiles": {
-      "type": "string"  // Assuming "profiles" is a string attribute
+    "if": {
+        "properties": {
+            "metadata": {
+                "type": "object",
+                "properties": {
+                    "profiles": {
+                        "type": "array",
+                        "contains": {
+                            "enum": ["action_id"]
+                        }
+                    }
+                }
+            }
+        }
     },
-    "otherAttribute": {
-      "type": "string"  // Assuming "otherAttribute" is another attribute that triggers the constraint
-    }
-  },
-  "if": {
-    "properties": {
-      "otherAttribute": { "type": "string" } // Check if "otherAttribute" is present
-    }
-  },
-  "then": {
-    "required": ["profiles"]  // Require "profiles" if "otherAttribute" is present
-  }
-}
+    "then": {
+        "required": ["action_id"]
+    },
+    "if": {
+        "properties": {
+            "metadata": {
+                "type": "object",
+                "properties": {
+                    "profiles": {
+                        "type": "array",
+                        "contains": {
+                            "enum": ["cloud"]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "then": {
+        "required": ["cloud"]
+    },
+    "required": [],
+    "title": "DNS Activity",
+    "type": "object"
 
 
 
