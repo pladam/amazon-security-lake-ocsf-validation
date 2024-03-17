@@ -1,0 +1,55 @@
+{
+	"cvss": {
+		"properties": {
+			"base_score": {
+				"title": "Base Score",
+				"type": "number"
+			},
+			"depth": {
+				"enum": [
+					"Base",
+					"Environmental",
+					"Temporal"
+				],
+				"title": "CVSS Depth",
+				"type": "string"
+			},
+			"metrics": {
+				"items": {
+					"$ref": "#/$defs/metric"
+				},
+				"title": "Metrics",
+				"type": "array"
+			},
+			"overall_score": {
+				"title": "Overall Score",
+				"type": "number"
+			},
+			"severity": {
+				"enum": [
+					"Low",
+					"Medium",
+					"High",
+					"Critical",
+					"None"
+				],
+				"title": "Severity",
+				"type": "string"
+			},
+			"vector_string": {
+				"title": "Vector String",
+				"type": "string"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"required": [
+			"base_score",
+			"version"
+		],
+		"title": "CVSS Score",
+		"type": "object"
+	}
+}

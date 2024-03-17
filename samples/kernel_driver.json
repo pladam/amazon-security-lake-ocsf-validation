@@ -1,0 +1,15 @@
+{
+	"kernel_driver": {
+		"properties": {
+			"file": {
+				"$ref": "#/$defs/file",
+				"title": "File"
+			}
+		},
+		"required": [
+			"file"
+		],
+		"title": "Kernel Extension",
+		"type": "object"
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"extension": {
+		"properties": {
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"required": [
+			"uid",
+			"version",
+			"name"
+		],
+		"title": "Schema Extension",
+		"type": "object"
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"fingerprint": {
+		"properties": {
+			"algorithm": {
+				"enum": [
+					"Unknown",
+					"MD5",
+					"SHA-1",
+					"SHA-256",
+					"SHA-512",
+					"CTPH",
+					"TLSH",
+					"quickXorHash"
+				],
+				"title": "Algorithm",
+				"type": "string"
+			},
+			"algorithm_id": {
+				"enum": [
+					3,
+					6,
+					99,
+					0,
+					1,
+					2,
+					4,
+					5,
+					7
+				],
+				"title": "Algorithm ID",
+				"type": "integer"
+			},
+			"value": {
+				"title": "Value",
+				"type": "string"
+			}
+		},
+		"required": [
+			"algorithm_id",
+			"value"
+		],
+		"title": "Fingerprint",
+		"type": "object"
+	}
+}

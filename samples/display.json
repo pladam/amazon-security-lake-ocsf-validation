@@ -1,0 +1,28 @@
+{
+	"display": {
+		"properties": {
+			"color_depth": {
+				"title": "Color Depth",
+				"type": "integer"
+			},
+			"physical_height": {
+				"title": "Physical Height",
+				"type": "integer"
+			},
+			"physical_orientation": {
+				"title": "Physical Orientation",
+				"type": "integer"
+			},
+			"physical_width": {
+				"title": "Physical Width",
+				"type": "integer"
+			},
+			"scale_factor": {
+				"title": "Scale Factor",
+				"type": "integer"
+			}
+		},
+		"title": "Display",
+		"type": "object"
+	}
+}

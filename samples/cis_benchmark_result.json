@@ -1,0 +1,27 @@
+{
+	"cis_benchmark_result": {
+		"properties": {
+			"desc": {
+				"title": "Description",
+				"type": "string"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"remediation": {
+				"$ref": "#/$defs/remediation",
+				"title": "Remediation Guidance"
+			},
+			"rule": {
+				"$ref": "#/$defs/rule",
+				"title": "Rule"
+			}
+		},
+		"required": [
+			"name"
+		],
+		"title": "CIS Benchmark Result",
+		"type": "object"
+	}
+}

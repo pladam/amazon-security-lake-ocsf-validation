@@ -1,0 +1,42 @@
+{
+	"response": {
+		"properties": {
+			"code": {
+				"title": "Response Code",
+				"type": "integer"
+			},
+			"containers": {
+				"items": {
+					"$ref": "#/$defs/container"
+				},
+				"title": "Containers",
+				"type": "array"
+			},
+			"data": {
+				"title": "Data",
+				"type": "object",
+			},
+			"error": {
+				"title": "Error Code",
+				"type": "string"
+			},
+			"error_message": {
+				"title": "Error Message",
+				"type": "string"
+			},
+			"flags": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Flags",
+				"type": "array"
+			},
+			"message": {
+				"title": "Message",
+				"type": "string"
+			}
+		},
+		"title": "Response Elements",
+		"type": "object"
+	}
+}

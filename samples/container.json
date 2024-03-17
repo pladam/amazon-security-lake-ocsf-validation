@@ -1,0 +1,48 @@
+{
+	"container": {
+		"properties": {
+			"hash": {
+				"$ref": "#/$defs/fingerprint",
+				"title": "Hash"
+			},
+			"image": {
+				"$ref": "#/$defs/image",
+				"title": "Image"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"network_driver": {
+				"title": "Network Driver",
+				"type": "string"
+			},
+			"orchestrator": {
+				"title": "Orchestrator",
+				"type": "string"
+			},
+			"pod_uuid": {
+				"title": "Pod UUID",
+				"type": "string"
+			},
+			"runtime": {
+				"title": "Runtime",
+				"type": "string"
+			},
+			"size": {
+				"title": "Size",
+				"type": "integer"
+			},
+			"tag": {
+				"title": "Image Tag",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			}
+		},
+		"title": "Container",
+		"type": "object"
+	}
+}

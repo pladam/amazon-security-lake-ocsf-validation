@@ -1,0 +1,56 @@
+{
+	"http_cookie": {
+		"properties": {
+			"domain": {
+				"title": "Domain",
+				"type": "string"
+			},
+			"expiration_time": {
+				"title": "Expiration Time",
+				"type": "integer"
+			},
+			"expiration_time_dt": {
+				"title": "Expiration Time",
+				"type": "string"
+			},
+			"http_only": {
+				"title": "HTTP Only",
+				"type": "boolean"
+			},
+			"is_http_only": {
+				"title": "HTTP Only",
+				"type": "boolean"
+			},
+			"is_secure": {
+				"title": "Secure",
+				"type": "boolean"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"path": {
+				"title": "Path",
+				"type": "string"
+			},
+			"samesite": {
+				"title": "SameSite",
+				"type": "string"
+			},
+			"secure": {
+				"title": "Secure",
+				"type": "boolean"
+			},
+			"value": {
+				"title": "Value",
+				"type": "string"
+			}
+		},
+		"required": [
+			"value",
+			"name"
+		],
+		"title": "HTTP Cookie",
+		"type": "object"
+	}
+}

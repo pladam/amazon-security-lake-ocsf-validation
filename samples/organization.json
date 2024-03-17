@@ -1,0 +1,24 @@
+{
+	"organization": {
+		"properties": {
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"ou_name": {
+				"title": "Org Unit Name",
+				"type": "string"
+			},
+			"ou_uid": {
+				"title": "Org Unit ID",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			}
+		},
+		"title": "Organization",
+		"type": "object"
+	}
+}

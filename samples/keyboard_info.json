@@ -1,0 +1,28 @@
+{
+	"keyboard_info": {
+		"properties": {
+			"function_keys": {
+				"title": "Function Keys",
+				"type": "integer"
+			},
+			"ime": {
+				"title": "IME",
+				"type": "string"
+			},
+			"keyboard_layout": {
+				"title": "Keyboard Layout",
+				"type": "string"
+			},
+			"keyboard_subtype": {
+				"title": "Keyboard Subtype",
+				"type": "integer"
+			},
+			"keyboard_type": {
+				"title": "Keyboard Type",
+				"type": "string"
+			}
+		},
+		"title": "Keyboard Information",
+		"type": "object"
+	}
+}

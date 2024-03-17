@@ -1,0 +1,36 @@
+{
+	"email_auth": {
+		"properties": {
+			"dkim": {
+				"title": "DKIM Status",
+				"type": "string"
+			},
+			"dkim_domain": {
+				"title": "DKIM Domain",
+				"type": "string"
+			},
+			"dkim_signature": {
+				"title": "DKIM Signature",
+				"type": "string"
+			},
+			"dmarc": {
+				"title": "DMARC Status",
+				"type": "string"
+			},
+			"dmarc_override": {
+				"title": "DMARC Override",
+				"type": "string"
+			},
+			"dmarc_policy": {
+				"title": "DMARC Policy",
+				"type": "string"
+			},
+			"spf": {
+				"title": "SPF Status",
+				"type": "string"
+			}
+		},
+		"title": "Email Authentication",
+		"type": "object"
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"cloud": {
+		"properties": {
+			"account": {
+				"$ref": "#/$defs/account",
+				"title": "Account"
+			},
+			"org": {
+				"$ref": "#/$defs/organization",
+				"title": "Organization"
+			},
+			"project_uid": {
+				"title": "Project ID",
+				"type": "string"
+			},
+			"provider": {
+				"title": "Provider",
+				"type": "string"
+			},
+			"region": {
+				"title": "Region",
+				"type": "string"
+			},
+			"zone": {
+				"title": "Network Zone",
+				"type": "string"
+			}
+		},
+		"required": [
+			"provider"
+		],
+		"title": "Cloud",
+		"type": "object"
+	}
+}

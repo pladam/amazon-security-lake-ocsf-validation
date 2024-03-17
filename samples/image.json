@@ -1,0 +1,34 @@
+{
+	"image": {
+		"properties": {
+			"labels": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Labels",
+				"type": "array"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"path": {
+				"title": "Path",
+				"type": "string"
+			},
+			"tag": {
+				"title": "Image Tag",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			}
+		},
+		"required": [
+			"uid"
+		],
+		"title": "Image",
+		"type": "object"
+	}
+}

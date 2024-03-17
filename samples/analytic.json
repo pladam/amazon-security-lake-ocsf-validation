@@ -1,0 +1,62 @@
+{
+	"analytic": {
+		"properties": {
+			"category": {
+				"title": "Category",
+				"type": "string"
+			},
+			"desc": {
+				"title": "Description",
+				"type": "string"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"related_analytics": {
+				"items": {
+					"$ref": "#/$defs/analytic"
+				},
+				"title": "Related Analytics",
+				"type": "array"
+			},
+			"type": {
+				"enum": [
+					"Unknown",
+					"Rule",
+					"Behavioral",
+					"Statistical",
+					"Learning (ML/DL)",
+					"Other"
+				],
+				"title": "Type",
+				"type": "string"
+			},
+			"type_id": {
+				"enum": [
+					3,
+					99,
+					0,
+					1,
+					2,
+					4
+				],
+				"title": "Type ID",
+				"type": "integer"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"required": [
+			"type_id"
+		],
+		"title": "Analytic",
+		"type": "object"
+	}
+}

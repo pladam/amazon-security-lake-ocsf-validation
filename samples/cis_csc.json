@@ -1,0 +1,19 @@
+{
+	"cis_csc": {
+		"properties": {
+			"control": {
+				"title": "Security Control",
+				"type": "string"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"required": [
+			"control"
+		],
+		"title": "CIS CSC",
+		"type": "object"
+	}
+}

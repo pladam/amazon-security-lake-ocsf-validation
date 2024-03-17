@@ -1,0 +1,54 @@
+{
+	"load_balancer": {
+		"properties": {
+			"classification": {
+				"title": "Classification",
+				"type": "string"
+			},
+			"code": {
+				"title": "Response Code",
+				"type": "integer"
+			},
+			"dst_endpoint": {
+				"$ref": "#/$defs/network_endpoint",
+				"title": "Destination Endpoint"
+			},
+			"endpoint_connections": {
+				"items": {
+					"$ref": "#/$defs/endpoint_connection"
+				},
+				"title": "Endpoint Connections",
+				"type": "array"
+			},
+			"error_message": {
+				"title": "Error Message",
+				"type": "string"
+			},
+			"message": {
+				"title": "Message",
+				"type": "string"
+			},
+			"metrics": {
+				"items": {
+					"$ref": "#/$defs/metric"
+				},
+				"title": "Metrics",
+				"type": "array"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"status_detail": {
+				"title": "Status Detail",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			}
+		},
+		"title": "Load Balancer",
+		"type": "object"
+	}
+}

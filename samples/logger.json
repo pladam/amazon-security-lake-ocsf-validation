@@ -1,0 +1,64 @@
+{
+	"logger": {
+		"properties": {
+			"device": {
+				"$ref": "#/$defs/device",
+				"title": "Device"
+			},
+			"log_level": {
+				"title": "Log Level",
+				"type": "string"
+			},
+			"log_name": {
+				"title": "Log Name",
+				"type": "string"
+			},
+			"log_provider": {
+				"title": "Log Provider",
+				"type": "string"
+			},
+			"log_version": {
+				"title": "Log Version",
+				"type": "string"
+			},
+			"logged_time": {
+				"title": "Logged Time",
+				"type": "integer",
+				"pattern": "^[0-9]{10,13}$"
+			},
+			"logged_time_dt": {
+				"title": "Logged Time",
+				"type": "string",
+				"pattern": "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{6}$"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"product": {
+				"$ref": "#/$defs/product",
+				"title": "Product"
+			},
+			"transmit_time": {
+				"title": "Transmission Time",
+				"type": "integer",
+				"pattern": "^[0-9]{10,13}$"
+			},
+			"transmit_time_dt": {
+				"title": "Transmission Time",
+				"type": "string",
+				"pattern": "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{6}$"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"title": "Logger",
+		"type": "object"
+	}
+}

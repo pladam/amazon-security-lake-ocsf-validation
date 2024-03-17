@@ -1,0 +1,134 @@
+{
+	"network_proxy": {
+		"properties": {
+			"domain": {
+				"title": "Domain",
+				"type": "string"
+			},
+			"hostname": {
+				"title": "Hostname",
+				"type": "string",
+				"pattern": "^(https?|HTTPS?):?\\/\\/[a-zA-Z0-9-\\.]+\\.[a-zA-Z]{2,}(:(\\d{1,5}))?(\\/\\S*)?$"
+			},
+			"hw_info": {
+				"$ref": "#/$defs/device_hw_info",
+				"title": "Hardware Info"
+			},
+			"instance_uid": {
+				"title": "Instance ID",
+				"type": "string"
+			},
+			"interface_name": {
+				"title": "Network Interface Name",
+				"type": "string"
+			},
+			"interface_uid": {
+				"title": "Network Interface ID",
+				"type": "string"
+			},
+			"intermediate_ips": {
+				"items": {
+					"type": "string",
+					"pattern": "^(?:[0-9]{1,3}\\.){3}[0-9]{1,3}$"
+				},
+				"title": "Intermediate IP Addresses",
+				"type": "array"
+			},
+			"ip": {
+				"title": "IP Address",
+				"type": "string",
+				"pattern": "^(?:[0-9]{1,3}\\.){3}[0-9]{1,3}$"
+			},
+			"location": {
+				"$ref": "#/$defs/location",
+				"title": "Geo Location"
+			},
+			"mac": {
+				"title": "MAC Address",
+				"type": "string",
+				"pattern": "^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"os": {
+				"$ref": "#/$defs/os",
+				"title": "OS"
+			},
+			"port": {
+				"title": "Port",
+				"type": "integer",
+				"pattern": "^([1-9]|[1-9][0-9]{0,3}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])$"
+			},
+			"proxy_endpoint": {
+				"$ref": "#/$defs/network_proxy",
+				"title": "Proxy Endpoint"
+			},
+			"subnet_uid": {
+				"title": "Subnet UID",
+				"type": "string"
+			},
+			"svc_name": {
+				"title": "Service Name",
+				"type": "string"
+			},
+			"type": {
+				"enum": [
+					"Unknown",
+					"Server",
+					"Desktop",
+					"Laptop",
+					"Tablet",
+					"Mobile",
+					"Virtual",
+					"IOT",
+					"Browser",
+					"Firewall",
+					"Switch",
+					"Hub",
+					"Other"
+				],
+				"title": "Type",
+				"type": "string"
+			},
+			"type_id": {
+				"enum": [
+					3,
+					6,
+					99,
+					0,
+					1,
+					2,
+					10,
+					4,
+					5,
+					7,
+					8,
+					9,
+					11
+				],
+				"title": "Type ID",
+				"type": "integer"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"vlan_uid": {
+				"title": "VLAN",
+				"type": "string"
+			},
+			"vpc_uid": {
+				"title": "VPC UID",
+				"type": "string"
+			},
+			"zone": {
+				"title": "Network Zone",
+				"type": "string"
+			}
+		},
+		"title": "Network Proxy Endpoint",
+		"type": "object"
+	}
+}

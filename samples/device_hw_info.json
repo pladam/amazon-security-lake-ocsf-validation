@@ -1,0 +1,60 @@
+{
+	"device_hw_info": {
+		"properties": {
+			"bios_date": {
+				"title": "BIOS Date",
+				"type": "string"
+			},
+			"bios_manufacturer": {
+				"title": "BIOS Manufacturer",
+				"type": "string"
+			},
+			"bios_ver": {
+				"title": "BIOS Version",
+				"type": "string"
+			},
+			"chassis": {
+				"title": "Chassis",
+				"type": "string"
+			},
+			"cpu_bits": {
+				"title": "CPU Bits",
+				"type": "integer"
+			},
+			"cpu_cores": {
+				"title": "CPU Cores",
+				"type": "integer"
+			},
+			"cpu_count": {
+				"title": "CPU Count",
+				"type": "integer"
+			},
+			"cpu_speed": {
+				"title": "Processor Speed",
+				"type": "integer"
+			},
+			"cpu_type": {
+				"title": "Processor Type",
+				"type": "string"
+			},
+			"desktop_display": {
+				"$ref": "#/$defs/display",
+				"title": "Desktop Display"
+			},
+			"keyboard_info": {
+				"$ref": "#/$defs/keyboard_info",
+				"title": "Keyboard Information"
+			},
+			"ram_size": {
+				"title": "RAM Size",
+				"type": "integer"
+			},
+			"serial_number": {
+				"title": "Serial Number",
+				"type": "string"
+			}
+		},
+		"title": "Device Hardware Info",
+		"type": "object"
+	}
+}

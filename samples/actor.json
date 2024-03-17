@@ -1,0 +1,35 @@
+{
+	"actor": {
+		"properties": {
+			"authorizations": {
+				"items": {
+					"$ref": "#/$defs/authorization"
+				},
+				"title": "Authorization Information",
+				"type": "array"
+			},
+			"idp": {
+				"$ref": "#/$defs/idp",
+				"title": "Identity Provider"
+			},
+			"invoked_by": {
+				"title": "Invoked by",
+				"type": "string"
+			},
+			"process": {
+				"$ref": "#/$defs/process",
+				"title": "Process"
+			},
+			"session": {
+				"$ref": "#/$defs/session",
+				"title": "Session"
+			},
+			"user": {
+				"$ref": "#/$defs/user",
+				"title": "User"
+			}
+		},
+		"title": "Actor",
+		"type": "object"
+	}
+}

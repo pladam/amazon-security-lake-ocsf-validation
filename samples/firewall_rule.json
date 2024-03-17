@@ -1,0 +1,59 @@
+{
+	"firewall_rule": {
+		"properties": {
+			"category": {
+				"title": "Category",
+				"type": "string"
+			},
+			"condition": {
+				"title": "Condition",
+				"type": "string"
+			},
+			"desc": {
+				"title": "Description",
+				"type": "string"
+			},
+			"duration": {
+				"title": "Duration",
+				"type": "integer"
+			},
+			"match_details": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Match Details",
+				"type": "array"
+			},
+			"match_location": {
+				"title": "Match Location",
+				"type": "string"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"rate_limit": {
+				"title": "Rate Limit",
+				"type": "integer"
+			},
+			"sensitivity": {
+				"title": "Sensitivity",
+				"type": "string"
+			},
+			"type": {
+				"title": "Type",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"title": "Firewall Rule",
+		"type": "object"
+	}
+}

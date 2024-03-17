@@ -1,0 +1,149 @@
+{
+	"network_connection_info": {
+		"properties": {
+			"boundary": {
+				"enum": [
+					"Unknown",
+					"Localhost",
+					"Internal",
+					"External",
+					"Same VPC",
+					"Internet/VPC Gateway",
+					"Virtual Private Gateway",
+					"Intra-region VPC",
+					"Inter-region VPC",
+					"Local Gateway",
+					"Gateway VPC",
+					"Internet Gateway",
+					"Other"
+				],
+				"title": "Boundary",
+				"type": "string"
+			},
+			"boundary_id": {
+				"enum": [
+					3,
+					6,
+					99,
+					0,
+					1,
+					2,
+					10,
+					4,
+					5,
+					7,
+					8,
+					9,
+					11
+				],
+				"title": "Boundary ID",
+				"type": "integer"
+			},
+			"direction": {
+				"enum": [
+					"Unknown",
+					"Inbound",
+					"Outbound",
+					"Lateral",
+					"Other"
+				],
+				"title": "Direction",
+				"type": "string"
+			},
+			"direction_id": {
+				"enum": [
+					3,
+					99,
+					0,
+					1,
+					2
+				],
+				"title": "Direction ID",
+				"type": "integer"
+			},
+			"protocol_name": {
+				"enum": [
+					"tcp",
+					"udp",
+					"icmp",
+					"igmp",
+					"ggp",
+					"ip",
+					"st",
+					"tcp/udp",
+					"egp",
+					"ggp",
+					"ipencap",
+					"ospf",
+					"sprite-rpc",
+					"larp",
+					"mtp",
+					"ax.25",
+					"ipip",
+					"micp",
+					"scc-sp",
+					"etherip",
+					"encap",
+					"pim",
+					"aris",
+					"ipv6",
+					"sctp",
+					"fc",
+					"mobility-header",
+					"udplite",
+					"mpls-in-ip",
+					"manet",
+					"hip",
+					"shim6",
+					"wesp",
+					"rohc",
+					"test"
+				],
+				"title": "Protocol Name",
+				"type": "string"
+			},
+			"protocol_num": {
+				"title": "Protocol Number",
+				"type": "integer",
+				"pattern": "^(-1|[0-9]|[1-9][0-9]|[1-9][0-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])$"
+			},
+			"protocol_ver": {
+				"enum": [
+					"Unknown",
+					"Internet Protocol version 4 (IPv4)",
+					"Internet Protocol version 6 (IPv6)",
+					"Other"
+				],
+				"title": "IP Version",
+				"type": "string"
+			},
+			"protocol_ver_id": {
+				"enum": [
+					6,
+					99,
+					0,
+					4
+				],
+				"title": "IP Version ID",
+				"type": "integer"
+			},
+			"session": {
+				"$ref": "#/$defs/session",
+				"title": "Session"
+			},
+			"tcp_flags": {
+				"title": "TCP Flags",
+				"type": "integer"
+			},
+			"uid": {
+				"title": "Connection UID",
+				"type": "string"
+			}
+		},
+		"required": [
+			"direction_id"
+		],
+		"title": "Network Connection Information",
+		"type": "object"
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"remediation": {
+		"properties": {
+			"desc": {
+				"title": "Description",
+				"type": "string"
+			},
+			"kb_article_list": {
+				"items": {
+					"$ref": "#/$defs/kb_article"
+				},
+				"title": "Knowledgebase Articles",
+				"type": "array"
+			},
+			"kb_articles": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Knowledgebase Articles",
+				"type": "array"
+			},
+			"references": {
+				"items": {
+					"type": "string"
+				},
+				"title": "References",
+				"type": "array"
+			}
+		},
+		"required": [
+			"desc"
+		],
+		"title": "Remediation",
+		"type": "object"
+	}
+}

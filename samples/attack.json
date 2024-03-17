@@ -1,0 +1,31 @@
+{
+	"attack": {
+		"properties": {
+			"sub_technique": {
+				"$ref": "#/$defs/sub_technique",
+				"title": "Sub Technique"
+			},
+			"tactic": {
+				"$ref": "#/$defs/tactic",
+				"title": "Tactic"
+			},
+			"tactics": {
+				"items": {
+					"$ref": "#/$defs/tactic"
+				},
+				"title": "Tactics",
+				"type": "array"
+			},
+			"technique": {
+				"$ref": "#/$defs/technique",
+				"title": "Technique"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"title": "MITRE ATT&CK®",
+		"type": "object"
+	}
+}

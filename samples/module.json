@@ -1,0 +1,57 @@
+{
+	"module": {
+		"properties": {
+			"base_address": {
+				"title": "Base Address",
+				"type": "string"
+			},
+			"file": {
+				"$ref": "#/$defs/file",
+				"title": "File"
+			},
+			"function_name": {
+				"title": "Function Name",
+				"type": "string"
+			},
+			"load_type": {
+				"enum": [
+					"Unknown",
+					"Standard",
+					"Non Standard",
+					"ShellCode",
+					"Mapped",
+					"NonStandard Backed",
+					"Other"
+				],
+				"title": "Load Type",
+				"type": "string"
+			},
+			"load_type_id": {
+				"enum": [
+					3,
+					99,
+					0,
+					1,
+					2,
+					4,
+					5
+				],
+				"title": "Load Type ID",
+				"type": "integer"
+			},
+			"start_address": {
+				"title": "Start Address",
+				"type": "string"
+			},
+			"type": {
+				"title": "Type",
+				"type": "string"
+			}
+		},
+		"required": [
+			"load_type_id"
+		],
+		"title": "Module",
+		"type": "object"
+	}
+}

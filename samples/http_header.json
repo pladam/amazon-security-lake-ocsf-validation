@@ -1,0 +1,20 @@
+{
+	"http_header": {
+		"properties": {
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"value": {
+				"title": "Value",
+				"type": "string"
+			}
+		},
+		"required": [
+			"value",
+			"name"
+		],
+		"title": "HTTP Header",
+		"type": "object"
+	}
+}

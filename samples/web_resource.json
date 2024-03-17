@@ -1,0 +1,40 @@
+{
+	"web_resource": {
+		"properties": {
+			"data": {
+				"title": "Data",
+				"type": "object"
+			},
+			"desc": {
+				"title": "Description",
+				"type": "string"
+			},
+			"labels": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Labels",
+				"type": "array"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"type": {
+				"title": "Type",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"url_string": {
+				"title": "URL String",
+				"type": "string",
+				"pattern": "^(https?|HTTPS?):?\\/\\/[a-zA-Z0-9-\\.]+\\.[a-zA-Z]{2,}(:(\\d{1,5}))?(\\/\\S*)?$"
+			}
+		},
+		"title": "Web Resource",
+		"type": "object"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"hassh": {
+		"properties": {
+			"algorithm": {
+				"title": "Algorithm",
+				"type": "string"
+			},
+			"fingerprint": {
+				"$ref": "#/$defs/fingerprint",
+				"title": "Fingerprint"
+			}
+		},
+		"required": [
+			"fingerprint"
+		],
+		"title": "HASSH",
+		"type": "object"
+	}
+}

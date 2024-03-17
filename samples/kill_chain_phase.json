@@ -1,0 +1,41 @@
+{
+	"kill_chain_phase": {
+		"properties": {
+			"phase": {
+				"enum": [
+					"Unknown",
+					"Reconnaissance",
+					"Weaponization",
+					"Delivery",
+					"Exploitation",
+					"Installation",
+					"Command & Control",
+					"Actions on Objectives",
+					"Other"
+				],
+				"title": "Kill Chain Phase",
+				"type": "string"
+			},
+			"phase_id": {
+				"enum": [
+					3,
+					6,
+					99,
+					0,
+					1,
+					2,
+					4,
+					5,
+					7
+				],
+				"title": "Kill Chain Phase ID",
+				"type": "integer"
+			}
+		},
+		"required": [
+			"phase_id"
+		],
+		"title": "Kill Chain Phase",
+		"type": "object"
+	}
+}

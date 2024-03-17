@@ -1,0 +1,48 @@
+{
+	"kernel": {
+		"properties": {
+			"is_system": {
+				"title": "System",
+				"type": "boolean"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"path": {
+				"title": "Path",
+				"type": "string"
+			},
+			"system_call": {
+				"title": "System Call",
+				"type": "string"
+			},
+			"type": {
+				"enum": [
+					"Unknown",
+					"Shared Mutex",
+					"System Call",
+					"Other"
+				],
+				"title": "Type",
+				"type": "string"
+			},
+			"type_id": {
+				"enum": [
+					99,
+					0,
+					1,
+					2
+				],
+				"title": "Type ID",
+				"type": "integer"
+			}
+		},
+		"required": [
+			"type_id",
+			"name"
+		],
+		"title": "Kernel Resource",
+		"type": "object"
+	}
+}

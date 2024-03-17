@@ -1,0 +1,40 @@
+{
+	"package": {
+		"properties": {
+			"architecture": {
+				"title": "Architecture",
+				"type": "string"
+			},
+			"epoch": {
+				"title": "Epoch",
+				"type": "integer"
+			},
+			"license": {
+				"title": "Software License",
+				"type": "string"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"purl": {
+				"title": "Package URL",
+				"type": "string"
+			},
+			"release": {
+				"title": "Software Release Details",
+				"type": "string"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"required": [
+			"version",
+			"name"
+		],
+		"title": "Software Package",
+		"type": "object"
+	}
+}

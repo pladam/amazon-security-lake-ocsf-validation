@@ -1,0 +1,33 @@
+{
+	"request": {
+		"properties": {
+			"containers": {
+				"items": {
+					"$ref": "#/$defs/container"
+				},
+				"title": "Containers",
+				"type": "array"
+			},
+			"data": {
+				"title": "Data",
+				"type": "object"
+			},
+			"flags": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Flags",
+				"type": "array"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			}
+		},
+		"required": [
+			"uid"
+		],
+		"title": "Request Elements",
+		"type": "object"
+	}
+}

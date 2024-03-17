@@ -1,0 +1,44 @@
+{
+	"network_traffic": {
+		"properties": {
+			"bytes": {
+				"title": "Total Bytes",
+				"type": "integer"
+			},
+			"bytes_in": {
+				"title": "Bytes In",
+				"type": "integer"
+			},
+			"bytes_out": {
+				"title": "Bytes Out",
+				"type": "integer"
+			},
+			"chunks": {
+				"title": "Chunks",
+				"type": "integer"
+			},
+			"chunks_in": {
+				"title": "Chunks In",
+				"type": "integer"
+			},
+			"chunks_out": {
+				"title": "Chunks Out",
+				"type": "integer"
+			},
+			"packets": {
+				"title": "Total Packets",
+				"type": "integer"
+			},
+			"packets_in": {
+				"title": "Packets In",
+				"type": "integer"
+			},
+			"packets_out": {
+				"title": "Packets Out",
+				"type": "integer"
+			}
+		},
+		"title": "Network Traffic",
+		"type": "object"
+	}
+}

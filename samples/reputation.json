@@ -1,0 +1,56 @@
+{
+	"reputation": {
+		"properties": {
+			"base_score": {
+				"title": "Reputation Score",
+				"type": "number"
+			},
+			"provider": {
+				"title": "Provider",
+				"type": "string"
+			},
+			"score": {
+				"enum": [
+					"Unknown",
+					"Very Safe",
+					"Safe",
+					"Probably Safe",
+					"Leans Safe",
+					"May not be Safe",
+					"Exercise Caution",
+					"Suspicious/Risky",
+					"Possibly Malicious",
+					"Probably Malicious",
+					"Malicious",
+					"Other"
+				],
+				"title": "Reputation Score",
+				"type": "string"
+			},
+			"score_id": {
+				"enum": [
+					3,
+					6,
+					99,
+					0,
+					1,
+					2,
+					10,
+					4,
+					5,
+					7,
+					8,
+					9
+				],
+				"title": "Reputation Score ID",
+				"type": "integer"
+			}
+		},
+		"required": [
+			"score_id",
+			"base_score"
+		],
+		"title": "Reputation",
+		"type": "object"
+	}
+}

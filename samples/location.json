@@ -1,0 +1,53 @@
+{
+	"location": {
+		"properties": {
+			"city": {
+				"title": "City",
+				"type": "string"
+			},
+			"continent": {
+				"title": "Continent",
+				"type": "string"
+			},
+			"coordinates": {
+				"items": {
+					"type": "number"
+				},
+				"title": "Coordinates",
+				"type": "array"
+			},
+			"country": {
+				"title": "Country",
+				"type": "string",
+				"pattern": "^[A-Z]{2}$"
+			},
+			"desc": {
+				"title": "Description",
+				"type": "string"
+			},
+			"is_on_premises": {
+				"title": "On Premises",
+				"type": "boolean"
+			},
+			"isp": {
+				"title": "ISP",
+				"type": "string"
+			},
+			"postal_code": {
+				"title": "Postal Code",
+				"type": "string"
+			},
+			"provider": {
+				"title": "Provider",
+				"type": "string"
+			},
+			"region": {
+				"title": "Region",
+				"type": "string",
+				"pattern": "^[A-Z]{2}-[A-Z0-9-]+$"
+			}
+		},
+		"title": "Geo Location",
+		"type": "object"
+	}
+}

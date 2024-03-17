@@ -1,0 +1,262 @@
+{
+	"$defs": {},
+	"$id": "https://schema.ocsf.io/schema/classes/api_activity",
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"properties": {
+		"message": {
+			"title": "Message",
+			"type": "string"
+		},
+		"observables": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"required": [
+					"name"
+				],
+				"minProperties": 1
+			}
+		},
+		"class_name": {
+			"const": "API Activity",
+			"title": "Class",
+			"type": "string"
+		},
+		"status_id": {
+			"enum": [
+				99,
+				0,
+				1,
+				2
+			],
+			"title": "Status ID",
+			"type": "integer"
+		},
+		"cloud": {
+			"$ref": "#/$defs/cloud",
+			"title": "Cloud"
+		},
+		"end_time_dt": {
+			"title": "End Time",
+			"type": "string",
+			"pattern": "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{6}$"
+		},
+		"type_uid": {
+			"enum": [
+				600300,
+				600301,
+				600302,
+				600303,
+				600304,
+				600399
+			],
+			"title": "Type ID",
+			"type": "integer"
+		},
+		"activity_name": {
+			"enum": [
+				"Create",
+				"Read",
+				"Update",
+				"Delete",
+				"Rename",
+				"Set Attributes",
+				"Set Security",
+				"Get Attributes",
+				"Get Security",
+				"Encrypt",
+				"Decrypt",
+				"Mount",
+				"Unmount",
+				"Open",
+				"Other"
+			],
+			"title": "Activity",
+			"type": "string"
+		},
+		"status": {
+			"enum": [
+				"Unknown",
+				"Success",
+				"Failure",
+				"Other"
+			],
+			"title": "Status",
+			"type": "string"
+		},
+		"dst_endpoint": {
+			"$ref": "#/$defs/network_endpoint",
+			"title": "Destination Endpoint"
+		},
+		"actor": {
+			"$ref": "#/$defs/actor",
+			"title": "Actor"
+		},
+		"api": {
+			"$ref": "#/$defs/api",
+			"title": "API Details"
+		},
+		"timezone_offset": {
+			"title": "Timezone Offset",
+			"type": "integer",
+			"pattern": "^-?(?:[0-9]|[1-9][0-9]|[1-9][0-9]{2}|[1-9][0-9]{3}|10[0-7][0-9]|1080)$"
+		},
+		"category_name": {
+			"const": "Application Activity",
+			"title": "Category",
+			"type": "string"
+		},
+		"duration": {
+			"title": "Duration",
+			"type": "integer"
+		},
+		"activity_id": {
+			"enum": [
+				3,
+				99,
+				0,
+				1,
+				2,
+				4
+			],
+			"title": "Activity ID",
+			"type": "integer"
+		},
+		"end_time": {
+			"title": "End Time",
+			"type": "integer",
+			"pattern": "^[0-9]{10,13}$"
+		},
+		"class_uid": {
+			"const": 6003,
+			"title": "Class ID",
+			"type": "integer"
+		},
+		"start_time": {
+			"title": "Start Time",
+			"type": "integer",
+			"pattern": "^[0-9]{10,13}$"
+		},
+		"status_detail": {
+			"title": "Status Details",
+			"type": "string"
+		},
+		"raw_data": {
+			"title": "Raw Data",
+			"type": "string"
+		},
+		"time_dt": {
+			"title": "Event Time",
+			"type": "string",
+			"pattern": "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{6}$"
+		},
+		"unmapped": {
+			"$ref": "#/$defs/object",
+			"title": "Unmapped Data"
+		},
+		"type_name": {
+			"enum": [
+				"API Activity: Unknown",
+				"API Activity: Create",
+				"API Activity: Read",
+				"API Activity: Update",
+				"API Activity: Delete",
+				"API Activity: Other"
+			],
+			"title": "Type Name",
+			"type": "string"
+		},
+		"category_uid": {
+			"const": 6,
+			"title": "Category ID",
+			"type": "integer"
+		},
+		"start_time_dt": {
+			"title": "Start Time",
+			"type": "string",
+			"pattern": "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{6}$"
+		},
+		"src_endpoint": {
+			"$ref": "#/$defs/network_endpoint",
+			"title": "Source Endpoint"
+		},
+		"severity_id": {
+			"enum": [
+				3,
+				6,
+				99,
+				0,
+				1,
+				2,
+				4,
+				5
+			],
+			"title": "Severity ID",
+			"type": "integer"
+		},
+		"resources": {
+			"items": {
+				"$ref": "#/$defs/resource_details"
+			},
+			"title": "Resources Array",
+			"type": "array"
+		},
+		"count": {
+			"title": "Count",
+			"type": "integer"
+		},
+		"enrichments": {
+			"items": {
+				"$ref": "#/$defs/enrichment"
+			},
+			"title": "Enrichments",
+			"type": "array"
+		},
+		"severity": {
+			"enum": [
+				"Unknown",
+				"Informational",
+				"Low",
+				"Medium",
+				"High",
+				"Critical",
+				"Fatal",
+				"Other"
+			],
+			"title": "Severity",
+			"type": "string"
+		},
+		"status_code": {
+			"title": "Status Code",
+			"type": "string"
+		},
+		"http_request": {
+			"$ref": "#/$defs/http_request",
+			"title": "HTTP Request"
+		},
+		"metadata": {
+			"$ref": "#/$defs/metadata",
+			"title": "Metadata"
+		},
+		"time": {
+			"title": "Event Time",
+			"type": "integer",
+			"pattern": "^[0-9]{10,13}$"
+		}
+	},
+	"required": [
+		"src_endpoint",
+		"time",
+		"metadata",
+		"class_uid",
+		"severity_id",
+		"api",
+		"actor",
+		"activity_id",
+		"type_uid",
+		"cloud",
+		"category_uid"
+	],
+	"title": "API Activity",
+	"type": "object"
+}

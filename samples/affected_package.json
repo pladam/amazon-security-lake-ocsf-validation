@@ -1,0 +1,56 @@
+{
+	"affected_package": {
+		"properties": {
+			"architecture": {
+				"title": "Architecture",
+				"type": "string"
+			},
+			"epoch": {
+				"title": "Epoch",
+				"type": "integer"
+			},
+			"fixed_in_version": {
+				"title": "Fixed In Version",
+				"type": "string"
+			},
+			"license": {
+				"title": "Software License",
+				"type": "string"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"package_manager": {
+				"title": "Package Manager",
+				"type": "string"
+			},
+			"path": {
+				"title": "Path",
+				"type": "string"
+			},
+			"purl": {
+				"title": "Package URL",
+				"type": "string"
+			},
+			"release": {
+				"title": "Software Release Details",
+				"type": "string"
+			},
+			"remediation": {
+				"$ref": "#/$defs/remediation",
+				"title": "Remediation Guidance"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"required": [
+			"version",
+			"name"
+		],
+		"title": "Affected Software Package",
+		"type": "object"
+	}
+}

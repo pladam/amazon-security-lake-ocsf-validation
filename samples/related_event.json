@@ -1,0 +1,48 @@
+{
+	"related_event": {
+		"properties": {
+			"attacks": {
+				"items": {
+					"$ref": "#/$defs/attack"
+				},
+				"title": "MITRE ATT&CK® Details",
+				"type": "array"
+			},
+			"kill_chain": {
+				"items": {
+					"$ref": "#/$defs/kill_chain_phase"
+				},
+				"title": "Kill Chain",
+				"type": "array"
+			},
+			"observables": {
+				"items": {
+					"$ref": "#/$defs/observable"
+				},
+				"title": "Observables",
+				"type": "array"
+			},
+			"product_uid": {
+				"title": "Product Identifier",
+				"type": "string"
+			},
+			"type": {
+				"title": "Type",
+				"type": "string"
+			},
+			"type_uid": {
+				"title": "Type ID",
+				"type": "integer"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			}
+		},
+		"required": [
+			"uid"
+		],
+		"title": "Related Event",
+		"type": "object"
+	}
+}

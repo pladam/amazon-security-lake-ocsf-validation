@@ -1,0 +1,78 @@
+{
+	"user": {
+		"properties": {
+			"account": {
+				"$ref": "#/$defs/account",
+				"title": "Account"
+			},
+			"credential_uid": {
+				"title": "User Credential ID",
+				"type": "string"
+			},
+			"domain": {
+				"title": "Domain",
+				"type": "string"
+			},
+			"email_addr": {
+				"title": "Email Address",
+				"type": "string",
+				"pattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+			},
+			"full_name": {
+				"title": "Full Name",
+				"type": "string"
+			},
+			"groups": {
+				"items": {
+					"$ref": "#/$defs/group"
+				},
+				"title": "Groups",
+				"type": "array"
+			},
+			"ldap_person": {
+				"$ref": "#/$defs/ldap_person",
+				"title": "LDAP Person"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"org": {
+				"$ref": "#/$defs/organization",
+				"title": "Organization"
+			},
+			"type": {
+				"enum": [
+					"Unknown",
+					"User",
+					"Admin",
+					"System",
+					"Other"
+				],
+				"title": "Type",
+				"type": "string"
+			},
+			"type_id": {
+				"enum": [
+					3,
+					99,
+					0,
+					1,
+					2
+				],
+				"title": "Type ID",
+				"type": "integer"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"uid_alt": {
+				"title": "Alternate ID",
+				"type": "string"
+			}
+		},
+		"title": "User",
+		"type": "object"
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"scan": {
+		"properties": {
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"type": {
+				"enum": [
+					"Unknown",
+					"Manual",
+					"Scheduled",
+					"Updated Content",
+					"Quarantined Items",
+					"Attached Media",
+					"User Logon",
+					"ELAM",
+					"Other"
+				],
+				"title": "Type",
+				"type": "string"
+			},
+			"type_id": {
+				"enum": [
+					3,
+					6,
+					99,
+					0,
+					1,
+					2,
+					4,
+					5,
+					7
+				],
+				"title": "Type ID",
+				"type": "integer"
+			},
+			"uid": {
+				"title": "Scan UID",
+				"type": "string"
+			}
+		},
+		"required": [
+			"type_id"
+		],
+		"title": "Scan",
+		"type": "object"
+	}
+}

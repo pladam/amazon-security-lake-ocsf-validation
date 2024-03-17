@@ -1,0 +1,27 @@
+{
+	"service": {
+		"properties": {
+			"labels": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Labels",
+				"type": "array"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"title": "Service",
+		"type": "object"
+	}
+}

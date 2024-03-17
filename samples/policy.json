@@ -1,0 +1,28 @@
+{
+	"policy": {
+		"properties": {
+			"desc": {
+				"title": "Description",
+				"type": "string"
+			},
+			"group": {
+				"$ref": "#/$defs/group",
+				"title": "Group"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"title": "Policy",
+		"type": "object"
+	}
+}

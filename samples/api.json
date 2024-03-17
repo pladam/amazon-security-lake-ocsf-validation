@@ -1,0 +1,35 @@
+{
+	"api": {
+		"properties": {
+			"group": {
+				"$ref": "#/$defs/group",
+				"title": "Group"
+			},
+			"operation": {
+				"title": "Operation",
+				"type": "string"
+			},
+			"request": {
+				"$ref": "#/$defs/request",
+				"title": "API Request Details"
+			},
+			"response": {
+				"$ref": "#/$defs/response",
+				"title": "API Response Details"
+			},
+			"service": {
+				"$ref": "#/$defs/service",
+				"title": "Service"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"required": [
+			"operation"
+		],
+		"title": "API",
+		"type": "object"
+	}
+}

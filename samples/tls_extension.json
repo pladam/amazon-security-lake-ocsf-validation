@@ -1,0 +1,73 @@
+{
+	"tls_extension": {
+		"properties": {
+			"data": {
+				"title": "Data",
+				"type": "object"
+			},
+			"type": {
+				"enum": [
+					"server_name",
+					"maximum_fragment_length",
+					"status_request",
+					"supported_groups",
+					"signature_algorithms",
+					"use_srtp",
+					"heartbeat",
+					"application_layer_protocol_negotiation",
+					"signed_certificate_timestamp",
+					"client_certificate_type",
+					"server_certificate_type",
+					"padding",
+					"pre_shared_key",
+					"early_data",
+					"supported_versions",
+					"cookie",
+					"psk_key_exchange_modes",
+					"certificate_authorities",
+					"oid_filters",
+					"post_handshake_auth",
+					"signature_algorithms_cert",
+					"key_share",
+					"Other"
+				],
+				"title": "Type",
+				"type": "string"
+			},
+			"type_id": {
+				"enum": [
+					99,
+					0,
+					1,
+					10,
+					5,
+					14,
+					15,
+					16,
+					18,
+					20,
+					21,
+					43,
+					44,
+					45,
+					47,
+					49,
+					50,
+					51,
+					13,
+					19,
+					41,
+					42,
+					48
+				],
+				"title": "Type ID",
+				"type": "integer"
+			}
+		},
+		"required": [
+			"type_id"
+		],
+		"title": "TLS Extension",
+		"type": "object"
+	}
+}

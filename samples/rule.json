@@ -1,0 +1,32 @@
+{
+	"rule": {
+		"properties": {
+			"category": {
+				"title": "Category",
+				"type": "string"
+			},
+			"desc": {
+				"title": "Description",
+				"type": "string"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"type": {
+				"title": "Type",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"title": "Rule",
+		"type": "object"
+	}
+}

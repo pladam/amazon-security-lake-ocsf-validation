@@ -1,0 +1,20 @@
+{
+	"san": {
+		"properties": {
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"type": {
+				"title": "Type",
+				"type": "string"
+			}
+		},
+		"required": [
+			"type",
+			"name"
+		],
+		"title": "Subject Alternative Name",
+		"type": "object"
+	}
+}

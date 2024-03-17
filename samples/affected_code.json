@@ -1,0 +1,31 @@
+{
+	"affected_code": {
+		"properties": {
+			"end_line": {
+				"title": "End Line",
+				"type": "integer"
+			},
+			"file": {
+				"$ref": "#/$defs/file",
+				"title": "File"
+			},
+			"owner": {
+				"$ref": "#/$defs/user",
+				"title": "Owner"
+			},
+			"remediation": {
+				"$ref": "#/$defs/remediation",
+				"title": "Remediation Guidance"
+			},
+			"start_line": {
+				"title": "Start Line",
+				"type": "integer"
+			}
+		},
+		"required": [
+			"file"
+		],
+		"title": "Affected Code",
+		"type": "object"
+	}
+}

@@ -1,0 +1,248 @@
+{
+	"device": {
+		"properties": {
+			"last_seen_time_dt": {
+				"title": "Last Seen",
+				"type": "string",
+				"pattern": "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{6}$"
+			},
+			"hypervisor": {
+				"title": "Hypervisor",
+				"type": "string"
+			},
+			"instance_uid": {
+				"title": "Instance ID",
+				"type": "string"
+			},
+			"hw_info": {
+				"$ref": "#/$defs/device_hw_info",
+				"title": "Hardware Info"
+			},
+			"type": {
+				"enum": [
+					"Unknown",
+					"Server",
+					"Desktop",
+					"Laptop",
+					"Tablet",
+					"Mobile",
+					"Virtual",
+					"IOT",
+					"Browser",
+					"Firewall",
+					"Switch",
+					"Hub",
+					"Other"
+				],
+				"title": "Type",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"ip": {
+				"title": "IP Address",
+				"type": "string",
+				"pattern": "^(?:[0-9]{1,3}\\.){3}[0-9]{1,3}$"
+			},
+			"vlan_uid": {
+				"title": "VLAN",
+				"type": "string"
+			},
+			"image": {
+				"$ref": "#/$defs/image",
+				"title": "Image"
+			},
+			"created_time_dt": {
+				"title": "Created Time",
+				"type": "string",
+				"pattern": "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{6}$"
+			},
+			"zone": {
+				"title": "Network Zone",
+				"type": "string"
+			},
+			"modified_time": {
+				"title": "Modified Time",
+				"type": "integer",
+				"pattern": "^[0-9]{10,13}$"
+			},
+			"type_id": {
+				"enum": [
+					3,
+					6,
+					99,
+					0,
+					1,
+					2,
+					10,
+					4,
+					5,
+					7,
+					8,
+					9,
+					11
+				],
+				"title": "Type ID",
+				"type": "integer"
+			},
+			"is_compliant": {
+				"title": "Compliant Device",
+				"type": "boolean"
+			},
+			"first_seen_time": {
+				"title": "First Seen",
+				"type": "integer",
+				"pattern": "^[0-9]{10,13}$"
+			},
+			"vpc_uid": {
+				"title": "VPC UID",
+				"type": "string"
+			},
+			"risk_score": {
+				"title": "Risk Score",
+				"type": "integer"
+			},
+			"location": {
+				"$ref": "#/$defs/location",
+				"title": "Geo Location"
+			},
+			"subnet_uid": {
+				"title": "Subnet UID",
+				"type": "string"
+			},
+			"groups": {
+				"items": {
+					"$ref": "#/$defs/group"
+				},
+				"title": "Groups",
+				"type": "array"
+			},
+			"risk_level": {
+				"enum": [
+					"Info",
+					"Low",
+					"Medium",
+					"High",
+					"Critical"
+				],
+				"title": "Risk Level",
+				"type": "string"
+			},
+			"imei": {
+				"title": "IMEI",
+				"type": "string"
+			},
+			"last_seen_time": {
+				"title": "Last Seen",
+				"type": "integer",
+				"pattern": "^[0-9]{10,13}$"
+			},
+			"interface_name": {
+				"title": "Network Interface Name",
+				"type": "string"
+			},
+			"modified_time_dt": {
+				"title": "Modified Time",
+				"type": "string",
+				"pattern": "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{6}$"
+			},
+			"region": {
+				"title": "Region",
+				"type": "string"
+			},
+			"first_seen_time_dt": {
+				"title": "First Seen",
+				"type": "string",
+				"pattern": "^\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2}\\.\\d{6}$"
+			},
+			"desc": {
+				"title": "Description",
+				"type": "string"
+			},
+			"hostname": {
+				"title": "Hostname",
+				"type": "string",
+				"pattern": "^(https?|HTTPS?):?\\/\\/[a-zA-Z0-9-\\.]+\\.[a-zA-Z]{2,}(:(\\d{1,5}))?(\\/\\S*)?$"
+			},
+			"created_time": {
+				"title": "Created Time",
+				"type": "integer",
+				"pattern": "^[0-9]{10,13}$"
+			},
+			"is_trusted": {
+				"title": "Trusted Device",
+				"type": "boolean"
+			},
+			"os": {
+				"$ref": "#/$defs/os",
+				"title": "OS"
+			},
+			"interface_uid": {
+				"title": "Network Interface ID",
+				"type": "string"
+			},
+			"domain": {
+				"title": "Domain",
+				"type": "string"
+			},
+			"subnet": {
+				"title": "Subnet",
+				"type": "string"
+			},
+			"mac": {
+				"title": "MAC Address",
+				"type": "string",
+				"pattern": "^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$"
+			},
+			"uid_alt": {
+				"title": "Alternate ID",
+				"type": "string"
+			},
+			"org": {
+				"$ref": "#/$defs/organization",
+				"title": "Organization"
+			},
+			"autoscale_uid": {
+				"title": "Autoscale UID",
+				"type": "string"
+			},
+			"is_personal": {
+				"title": "Personal Device",
+				"type": "boolean"
+			},
+			"network_interfaces": {
+				"items": {
+					"$ref": "#/$defs/network_interface"
+				},
+				"title": "Network Interfaces",
+				"type": "array"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"risk_level_id": {
+				"enum": [
+					3,
+					0,
+					1,
+					2,
+					4
+				],
+				"title": "Risk Level ID",
+				"type": "integer"
+			},
+			"is_managed": {
+				"title": "Managed Device",
+				"type": "boolean"
+			}
+		},
+		"required": [
+			"type_id"
+		],
+		"title": "Device",
+		"type": "object"
+	}
+}

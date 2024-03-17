@@ -1,0 +1,33 @@
+{
+	"enrichment": {
+		"properties": {
+			"data": {
+				"title": "Data",
+				"type": "object"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"provider": {
+				"title": "Provider",
+				"type": "string"
+			},
+			"type": {
+				"title": "Type",
+				"type": "string"
+			},
+			"value": {
+				"title": "Value",
+				"type": "string"
+			}
+		},
+		"required": [
+			"value",
+			"name",
+			"data"
+		],
+		"title": "Enrichment",
+		"type": "object"
+	}
+}

@@ -1,0 +1,59 @@
+{
+	"resource_details": {
+		"properties": {
+			"cloud_partition": {
+				"title": "Cloud Partition",
+				"type": "string"
+			},
+			"criticality": {
+				"title": "Criticality",
+				"type": "string"
+			},
+			"data": {
+				"title": "Data",
+				"type": "object"
+			},
+			"group": {
+				"$ref": "#/$defs/group",
+				"title": "Group"
+			},
+			"labels": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Labels",
+				"type": "array"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"namespace": {
+				"title": "Namespace",
+				"type": "string"
+			},
+			"owner": {
+				"$ref": "#/$defs/user",
+				"title": "Owner"
+			},
+			"region": {
+				"title": "Region",
+				"type": "string"
+			},
+			"type": {
+				"title": "Type",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"title": "Resource Details",
+		"type": "object"
+	}
+}

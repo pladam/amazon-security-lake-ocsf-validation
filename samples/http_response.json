@@ -1,0 +1,104 @@
+{
+	"http_response": {
+		"properties": {
+			"code": {
+				"enum": [
+					"100",
+					"101",
+					"200",
+					"201",
+					"202",
+					"204",
+					"206",
+					"300",
+					"301",
+					"302",
+					"303",
+					"304",
+					"307",
+					"308",
+					"400",
+					"401",
+					"403",
+					"404",
+					"405",
+					"408",
+					"409",
+					"410",
+					"429",
+					"500",
+					"501",
+					"502",
+					"503",
+					"504",
+					"505"
+				],
+				"title": "Response Code",
+				"type": "integer"
+			},
+			"content_type": {
+				"title": "HTTP Content Type",
+				"type": "string"
+			},
+			"http_headers": {
+				"items": {
+					"$ref": "#/$defs/http_header"
+				},
+				"title": "HTTP Headers",
+				"type": "array"
+			},
+			"latency": {
+				"title": "Latency",
+				"type": "integer"
+			},
+			"length": {
+				"title": "Response Length",
+				"type": "integer"
+			},
+			"message": {
+				"title": "Message",
+				"type": "string"
+			},
+			"status": {
+				"enum": [
+					"Continue",
+					"Switching Protocols",
+					"OK",
+					"Created",
+					"Accepted",
+					"No Content",
+					"Partial Content",
+					"Multiple Choices",
+					"Moved Permanently",
+					"Found",
+					"See Other",
+					"Not Modified",
+					"Temporary Redirect",
+					"Permanent Redirect",
+					"Bad Request",
+					"Unauthorized",
+					"Forbidden",
+					"Not Found",
+					"Method Not Allowed",
+					"Request Timeout",
+					"Conflict",
+					"Gone",
+					"Too Many Requests",
+					"Internal Server Error",
+					"Not Implemented",
+					"Bad Gateway",
+					"Service Unavailable",
+					"Gateway Timeout",
+					"HTTP Version Not Supported"
+				],
+				"title": "Status",
+				"type": "string"
+			}
+		},
+		"required": [
+			"code"
+		],
+		"title": "HTTP Response",
+		"type": "object"
+	}
+}

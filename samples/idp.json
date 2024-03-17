@@ -1,0 +1,16 @@
+{
+	"idp": {
+		"properties": {
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			}
+		},
+		"title": "Identity Provider",
+		"type": "object"
+	}
+}

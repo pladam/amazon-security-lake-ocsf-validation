@@ -1,0 +1,66 @@
+{
+	"network_interface": {
+		"properties": {
+			"hostname": {
+				"title": "Hostname",
+				"type": "string",
+				"pattern": "^(https?|HTTPS?):?\\/\\/[a-zA-Z0-9-\\.]+\\.[a-zA-Z]{2,}(:(\\d{1,5}))?(\\/\\S*)?$"
+			},
+			"ip": {
+				"title": "IP Address",
+				"type": "string",
+				"pattern": "^(?:[0-9]{1,3}\\.){3}[0-9]{1,3}$"
+			},
+			"mac": {
+				"title": "MAC Address",
+				"type": "string",
+				"pattern": "^([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})$"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"namespace": {
+				"title": "Namespace",
+				"type": "string"
+			},
+			"subnet_prefix": {
+				"title": "Subnet Prefix Length",
+				"type": "integer"
+			},
+			"type": {
+				"enum": [
+					"Unknown",
+					"Wired",
+					"Wireless",
+					"Mobile",
+					"Tunnel",
+					"Other"
+				],
+				"title": "Type",
+				"type": "string"
+			},
+			"type_id": {
+				"enum": [
+					3,
+					99,
+					0,
+					1,
+					2,
+					4
+				],
+				"title": "Type ID",
+				"type": "integer"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			}
+		},
+		"required": [
+			"type_id"
+		],
+		"title": "Network Interface",
+		"type": "object"
+	}
+}

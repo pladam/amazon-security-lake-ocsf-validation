@@ -1,0 +1,65 @@
+{
+	"http_request": {
+		"properties": {
+			"args": {
+				"title": "HTTP Arguments",
+				"type": "string"
+			},
+			"http_headers": {
+				"items": {
+					"$ref": "#/$defs/http_header"
+				},
+				"title": "HTTP Headers",
+				"type": "array"
+			},
+			"http_method": {
+				"enum": [
+					"OPTIONS",
+					"GET",
+					"HEAD",
+					"POST",
+					"PUT",
+					"DELETE",
+					"TRACE",
+					"CONNECT"
+				],
+				"title": "HTTP Method",
+				"type": "string"
+			},
+			"length": {
+				"title": "Request Length",
+				"type": "integer"
+			},
+			"referrer": {
+				"title": "HTTP Referrer",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"url": {
+				"$ref": "#/$defs/url",
+				"title": "URL"
+			},
+			"user_agent": {
+				"title": "HTTP User-Agent",
+				"type": "string"
+			},
+			"version": {
+				"title": "HTTP Version",
+				"type": "string"
+			},
+			"x_forwarded_for": {
+				"items": {
+					"type": "string",
+					"pattern": "^(?:[0-9]{1,3}\\.){3}[0-9]{1,3}$"
+				},
+				"title": "X-Forwarded-For",
+				"type": "array"
+			}
+		},
+		"title": "HTTP Request",
+		"type": "object"
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"endpoint_connection": {
+		"properties": {
+			"code": {
+				"title": "Response Code",
+				"type": "integer"
+			},
+			"network_endpoint": {
+				"$ref": "#/$defs/network_endpoint",
+				"title": "Network Endpoint"
+			}
+		},
+		"title": "Endpoint Connection",
+		"type": "object"
+	}
+}

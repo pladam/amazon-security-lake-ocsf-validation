@@ -1,0 +1,52 @@
+{
+	"account": {
+		"properties": {
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"type": {
+				"enum": [
+					"Unknown",
+					"LDAP Account",
+					"Windows Account",
+					"AWS IAM User",
+					"AWS IAM Role",
+					"GCP Account",
+					"Azure AD Account",
+					"Mac OS Account",
+					"Apple Account",
+					"Linux Account",
+					"AWS Account",
+					"Other"
+				],
+				"title": "Type",
+				"type": "string"
+			},
+			"type_id": {
+				"enum": [
+					3,
+					6,
+					99,
+					0,
+					1,
+					2,
+					10,
+					4,
+					5,
+					7,
+					8,
+					9
+				],
+				"title": "Type ID",
+				"type": "integer"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			}
+		},
+		"title": "Account",
+		"type": "object"
+	}
+}

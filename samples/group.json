@@ -1,0 +1,35 @@
+{
+	"group": {
+		"properties": {
+			"desc": {
+				"title": "Description",
+				"type": "string"
+			},
+			"domain": {
+				"title": "Domain",
+				"type": "string"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"privileges": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Privileges",
+				"type": "array"
+			},
+			"type": {
+				"title": "Account Type",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			}
+		},
+		"title": "Group",
+		"type": "object"
+	}
+}

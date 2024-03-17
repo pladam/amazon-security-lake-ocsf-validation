@@ -1,0 +1,90 @@
+{
+	"os": {
+		"properties": {
+			"build": {
+				"title": "OS Build",
+				"type": "string"
+			},
+			"country": {
+				"title": "Country",
+				"type": "string",
+				"pattern": "^[A-Z]{2}$"
+			},
+			"cpe_name": {
+				"title": "The product CPE identifier",
+				"type": "string"
+			},
+			"cpu_bits": {
+				"title": "CPU Bits",
+				"type": "integer"
+			},
+			"edition": {
+				"title": "OS Edition",
+				"type": "string"
+			},
+			"lang": {
+				"title": "Language",
+				"type": "string",
+				"pattern": "^[a-z]{2}$"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"sp_name": {
+				"title": "OS Service Pack",
+				"type": "string"
+			},
+			"sp_ver": {
+				"title": "OS Service Pack Version",
+				"type": "integer"
+			},
+			"type": {
+				"enum": [
+					"Unknown",
+					"Other",
+					"Windows",
+					"Windows Mobile",
+					"Linux",
+					"Android",
+					"macOS",
+					"iOS",
+					"iPadOS",
+					"Solaris",
+					"AIX",
+					"HP-UX"
+				],
+				"title": "Type",
+				"type": "string"
+			},
+			"type_id": {
+				"enum": [
+					99,
+					0,
+					101,
+					100,
+					200,
+					201,
+					300,
+					301,
+					302,
+					400,
+					401,
+					402
+				],
+				"title": "Type ID",
+				"type": "integer"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"required": [
+			"type_id",
+			"name"
+		],
+		"title": "Operating System (OS)",
+		"type": "object"
+	}
+}

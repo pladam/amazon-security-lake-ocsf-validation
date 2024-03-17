@@ -1,0 +1,25 @@
+{
+	"cwe": {
+		"properties": {
+			"caption": {
+				"title": "Caption",
+				"type": "string"
+			},
+			"src_url": {
+				"title": "Source URL",
+				"type": "string",
+				"pattern": "^(https?|HTTPS?):?\\/\\/[a-zA-Z0-9-\\.]+\\.[a-zA-Z]{2,}(:(\\d{1,5}))?(\\/\\S*)?$"
+			},
+			"uid": {
+				"title": "CWE ID",
+				"type": "string",
+				"pattern": "^CWE-\\d+$"
+			}
+		},
+		"required": [
+			"uid"
+		],
+		"title": "CWE",
+		"type": "object"
+	}
+}

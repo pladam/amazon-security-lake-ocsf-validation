@@ -1,0 +1,21 @@
+{
+	"sub_technique": {
+		"properties": {
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"src_url": {
+				"title": "Source URL",
+				"type": "string",
+				"pattern": "^(https?|HTTPS?):?\\/\\/[a-zA-Z0-9-\\.]+\\.[a-zA-Z]{2,}(:(\\d{1,5}))?(\\/\\S*)?$"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			}
+		},
+		"title": "Sub Technique",
+		"type": "object"
+	}
+}

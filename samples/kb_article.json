@@ -1,0 +1,60 @@
+{
+	"kb_article": {
+		"properties": {
+			"bulletin": {
+				"title": "Patch Bulletin",
+				"type": "string"
+			},
+			"classification": {
+				"title": "Classification",
+				"type": "string"
+			},
+			"created_time": {
+				"title": "Created Time",
+				"type": "integer"
+			},
+			"created_time_dt": {
+				"title": "Created Time",
+				"type": "string"
+			},
+			"is_superseded": {
+				"title": "The patch is superseded.",
+				"type": "boolean"
+			},
+			"os": {
+				"$ref": "#/$defs/os",
+				"title": "OS"
+			},
+			"product": {
+				"$ref": "#/$defs/product",
+				"title": "Product"
+			},
+			"severity": {
+				"title": "Severity",
+				"type": "string"
+			},
+			"size": {
+				"title": "Size",
+				"type": "integer"
+			},
+			"src_url": {
+				"title": "Source URL",
+				"type": "string",
+				"pattern": "^(https?|HTTPS?):?\\/\\/[a-zA-Z0-9-\\.]+\\.[a-zA-Z]{2,}(:(\\d{1,5}))?(\\/\\S*)?$"
+			},
+			"title": {
+				"title": "Title",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			}
+		},
+		"required": [
+			"uid"
+		],
+		"title": "KB Article",
+		"type": "object"
+	}
+}

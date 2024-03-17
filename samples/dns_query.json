@@ -1,0 +1,145 @@
+{
+	"dns_query": {
+		"properties": {
+			"class": {
+				"enum": [
+					"IN",
+					"CH",
+					"HS",
+					"Other"
+				],
+				"title": "Resource Record Class",
+				"type": "string"
+			},
+			"hostname": {
+				"title": "Hostname",
+				"type": "string",
+				"pattern": "^(https?|HTTPS?):?\\/\\/[a-zA-Z0-9-\\.]+\\.[a-zA-Z]{2,}(:(\\d{1,5}))?(\\/\\S*)?$"
+			},
+			"opcode": {
+				"enum": [
+					"Query",
+					"Inverse Query",
+					"Status",
+					"Reserved",
+					"Notify",
+					"Update",
+					"DSO Message",
+					"Other"
+				],
+				"title": "DNS Opcode",
+				"type": "string"
+			},
+			"opcode_id": {
+				"enum": [
+					3,
+					6,
+					0,
+					1,
+					2,
+					4,
+					5
+				],
+				"title": "DNS Opcode ID",
+				"type": "integer"
+			},
+			"packet_uid": {
+				"title": "Packet UID",
+				"type": "integer"
+			},
+			"type": {
+				"enum": [
+					"A",
+					"NS",
+					"MD",
+					"MF",
+					"CNAME",
+					"SOA",
+					"MB",
+					"MG",
+					"MR",
+					"NULL",
+					"WKS",
+					"PTR",
+					"HINFO",
+					"MINFO",
+					"MX",
+					"TXT",
+					"RP",
+					"AFSDB",
+					"X25",
+					"ISDN",
+					"RT",
+					"NSAP",
+					"NSAP_PTR",
+					"SIG",
+					"KEY",
+					"PX",
+					"GPOS",
+					"AAAA",
+					"LOC",
+					"NXT",
+					"EID",
+					"NIMLOC",
+					"SRV",
+					"ATMA",
+					"NAPTR",
+					"KX",
+					"CERT",
+					"A6",
+					"DNAME",
+					"SINK",
+					"OPT",
+					"APL",
+					"DS",
+					"SSHFP",
+					"IPSECKEY",
+					"RRSIG",
+					"NSEC",
+					"DNSKEY",
+					"DHCID",
+					"NSEC3",
+					"NSEC3PARAM",
+					"TLSA",
+					"SMIMEA",
+					"HIP",
+					"NINFO",
+					"RKEY",
+					"TALINK",
+					"CDS",
+					"CDNSKEY",
+					"OPENPGPKEY",
+					"CSYNC",
+					"ZONEMD",
+					"SVCB",
+					"HTTPS",
+					"SPF",
+					"UINFO",
+					"UID",
+					"GID",
+					"UNSPEC",
+					"NID",
+					"L32",
+					"L64",
+					"LP",
+					"EUI48",
+					"EUI64",
+					"TKEY",
+					"TSIG",
+					"IXFR",
+					"AXFR",
+					"MAILB",
+					"MAILA",
+					"ANY"
+				],
+				"title": "Resource Record Type",
+				"type": "string"
+			}
+		},
+		"required": [
+			"hostname"
+		],
+		"title": "DNS Query",
+		"type": "object"
+	}
+}

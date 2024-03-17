@@ -1,0 +1,16 @@
+{
+	"authorization": {
+		"properties": {
+			"decision": {
+				"title": "Authorization Decision/Outcome",
+				"type": "string"
+			},
+			"policy": {
+				"$ref": "#/$defs/policy",
+				"title": "Policy"
+			}
+		},
+		"title": "Authorization Result",
+		"type": "object"
+	}
+}

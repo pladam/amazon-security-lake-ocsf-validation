@@ -1,0 +1,44 @@
+{
+	"evidences": {
+		"properties": {
+			"actor": {
+				"$ref": "#/$defs/actor",
+				"title": "Actor"
+			},
+			"api": {
+				"$ref": "#/$defs/api",
+				"title": "API Details"
+			},
+			"connection_info": {
+				"$ref": "#/$defs/network_connection_info",
+				"title": "Connection Info"
+			},
+			"data": {
+				"title": "Data",
+				"type": "object"
+			},
+			"dst_endpoint": {
+				"$ref": "#/$defs/network_endpoint",
+				"title": "Destination Endpoint"
+			},
+			"file": {
+				"$ref": "#/$defs/file",
+				"title": "File"
+			},
+			"process": {
+				"$ref": "#/$defs/process",
+				"title": "Process"
+			},
+			"query": {
+				"$ref": "#/$defs/dns_query",
+				"title": "DNS Query"
+			},
+			"src_endpoint": {
+				"$ref": "#/$defs/network_endpoint",
+				"title": "Source Endpoint"
+			}
+		},
+		"title": "Evidence Artifacts",
+		"type": "object"
+	}
+}

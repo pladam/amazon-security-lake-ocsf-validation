@@ -1,0 +1,28 @@
+{
+	"rpc_interface": {
+		"properties": {
+			"ack_reason": {
+				"title": "Acknowledgement Reason",
+				"type": "integer"
+			},
+			"ack_result": {
+				"title": "Acknowledgement Result",
+				"type": "integer"
+			},
+			"uuid": {
+				"title": "UUID",
+				"type": "string"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"required": [
+			"uuid",
+			"version"
+		],
+		"title": "RPC Interface",
+		"type": "object"
+	}
+}

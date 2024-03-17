@@ -1,0 +1,20 @@
+{
+	"feature": {
+		"properties": {
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"title": "Feature",
+		"type": "object"
+	}
+}

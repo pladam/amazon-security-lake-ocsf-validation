@@ -1,0 +1,180 @@
+{
+	"tls": {
+		"properties": {
+			"alert": {
+				"enum": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					13,
+					14,
+					15,
+					16,
+					17,
+					18,
+					19,
+					20,
+					21,
+					22,
+					30,
+					31,
+					32,
+					33,
+					34,
+					35,
+					36,
+					37,
+					38,
+					39,
+					40,
+					41,
+					42,
+					43,
+					44,
+					45,
+					46,
+					47,
+					48,
+					49,
+					50,
+					51,
+					60,
+					61,
+					62,
+					63,
+					64,
+					65,
+					66,
+					67,
+					68,
+					69,
+					70,
+					71,
+					80,
+					86,
+					90,
+					91,
+					92,
+					93,
+					94,
+					95,
+					96,
+					97,
+					98,
+					99,
+					100,
+					110,
+					111,
+					112,
+					113,
+					114,
+					115,
+					116,
+					117,
+					118,
+					119,
+					120,
+					121,
+					122,
+					123,
+					124,
+					125,
+					126,
+					127,
+					255
+				],
+				"title": "Client TLS Alert",
+				"type": "integer"
+			},
+			"certificate": {
+				"$ref": "#/$defs/certificate",
+				"title": "Certificate"
+			},
+			"certificate_chain": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Certificate Chain",
+				"type": "array"
+			},
+			"cipher": {
+				"title": "Cipher Suite",
+				"type": "string"
+			},
+			"client_ciphers": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Client Cipher Suites",
+				"type": "array"
+			},
+			"extension_list": {
+				"items": {
+					"$ref": "#/$defs/tls_extension"
+				},
+				"title": "Extension List",
+				"type": "array"
+			},
+			"handshake_dur": {
+				"title": "Handshake Duration",
+				"type": "integer"
+			},
+			"ja3_hash": {
+				"$ref": "#/$defs/fingerprint",
+				"title": "JA3 Hash"
+			},
+			"ja3s_hash": {
+				"$ref": "#/$defs/fingerprint",
+				"title": "JA3S Hash"
+			},
+			"key_length": {
+				"title": "Key Length",
+				"type": "integer"
+			},
+			"sans": {
+				"items": {
+					"$ref": "#/$defs/san"
+				},
+				"title": "Subject Alternative Names",
+				"type": "array"
+			},
+			"server_ciphers": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Server Cipher Suites",
+				"type": "array"
+			},
+			"sni": {
+				"title": "Server Name Indication",
+				"type": "string"
+			},
+			"tls_extension_list": {
+				"items": {
+					"$ref": "#/$defs/tls_extension"
+				},
+				"title": "TLS Extension List",
+				"type": "array"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"required": [
+			"version"
+		],
+		"title": "Transport Layer Security (TLS)",
+		"type": "object"
+	}
+}

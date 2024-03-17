@@ -1,0 +1,59 @@
+{
+	"compliance": {
+		"properties": {
+			"control": {
+				"title": "Security Control",
+				"type": "string"
+			},
+			"requirements": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Compliance Requirements",
+				"type": "array"
+			},
+			"standards": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Security Standards",
+				"type": "array"
+			},
+			"status": {
+				"enum": [
+					"Unknown",
+					"Pass",
+					"Warning",
+					"Fail",
+					"Other"
+				],
+				"title": "Status",
+				"type": "string"
+			},
+			"status_code": {
+				"title": "Status Code",
+				"type": "string"
+			},
+			"status_detail": {
+				"title": "Status Details",
+				"type": "string"
+			},
+			"status_id": {
+				"enum": [
+					3,
+					99,
+					0,
+					1,
+					2
+				],
+				"title": "Status ID",
+				"type": "integer"
+			}
+		},
+		"required": [
+			"standards"
+		],
+		"title": "Compliance",
+		"type": "object"
+	}
+}

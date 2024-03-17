@@ -1,0 +1,83 @@
+{
+	"email": {
+		"properties": {
+			"cc": {
+				"items": {
+					"type": "string",
+					"pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+				},
+				"title": "Cc",
+				"type": "array"
+			},
+			"delivered_to": {
+				"title": "Delivered To",
+				"type": "string"
+			},
+			"from": {
+				"title": "From",
+				"type": "string",
+				"pattern": "^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$"
+			},
+			"message_uid": {
+				"title": "Message UID",
+				"type": "string",
+				"pattern": "^<([^@\\s]+@[^@\\s]+\\.[^@\\s]+)>$"
+			},
+			"raw_header": {
+				"title": "Raw Header",
+				"type": "string"
+			},
+			"reply_to": {
+				"title": "Reply To",
+				"type": "string",
+				"pattern": "^([^@\\s]+@[^@\\s]+\\.[^@\\s]+)$"
+			},
+			"size": {
+				"title": "Size",
+				"type": "integer"
+			},
+			"smtp_from": {
+				"title": "SMTP From",
+				"type": "string"
+			},
+			"smtp_to": {
+				"items": {
+					"type": "string",
+					"pattern": "^([^@\\s]+@[^@\\s]+\\.[^@\\s]+)$"
+				},
+				"title": "SMTP To",
+				"type": "array"
+			},
+			"subject": {
+				"title": "Subject",
+				"type": "string"
+			},
+			"to": {
+				"items": {
+					"type": "string",
+					"pattern": "^([^@\\s]+@[^@\\s]+\\.[^@\\s]+)$"
+				},
+				"title": "To",
+				"type": "array"
+			},
+			"uid": {
+				"title": "Email UID",
+				"type": "string"
+			},
+			"x_originating_ip": {
+				"items": {
+					"type": "string",
+					"pattern": "^(?:[0-9]{1,3}\\.){3}[0-9]{1,3}$"
+				},
+				"title": "X-Originating-IP",
+				"type": "array"
+			}
+		},
+		"required": [
+			"to",
+			"from"
+		],
+		"title": "Email",
+		"type": "object"
+	}
+}

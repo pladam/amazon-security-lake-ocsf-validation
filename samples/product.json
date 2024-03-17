@@ -1,0 +1,49 @@
+{
+	"product": {
+		"properties": {
+			"cpe_name": {
+				"title": "The product CPE identifier",
+				"type": "string"
+			},
+			"feature": {
+				"$ref": "#/$defs/feature",
+				"title": "Feature"
+			},
+			"lang": {
+				"title": "Language",
+				"type": "string",
+				"pattern": "^[a-z]{2}$"
+			},
+			"name": {
+				"title": "Name",
+				"type": "string"
+			},
+			"path": {
+				"title": "Path",
+				"type": "string"
+			},
+			"uid": {
+				"title": "Unique ID",
+				"type": "string"
+			},
+			"url_string": {
+				"title": "URL String",
+				"type": "string",
+				"pattern": "^(https?|HTTPS?):?\\/\\/[a-zA-Z0-9-\\.]+\\.[a-zA-Z]{2,}(:(\\d{1,5}))?(\\/\\S*)?$"
+			},
+			"vendor_name": {
+				"title": "Vendor Name",
+				"type": "string"
+			},
+			"version": {
+				"title": "Version",
+				"type": "string"
+			}
+		},
+		"required": [
+			"vendor_name"
+		],
+		"title": "Product",
+		"type": "object"
+	}
+}

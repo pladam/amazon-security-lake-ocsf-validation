@@ -1,0 +1,35 @@
+{
+	"dce_rpc": {
+		"properties": {
+			"command": {
+				"title": "Command",
+				"type": "string"
+			},
+			"command_response": {
+				"title": "Command Response",
+				"type": "string"
+			},
+			"flags": {
+				"items": {
+					"type": "string"
+				},
+				"title": "Flags",
+				"type": "array"
+			},
+			"opnum": {
+				"title": "Opnum",
+				"type": "integer"
+			},
+			"rpc_interface": {
+				"$ref": "#/$defs/rpc_interface",
+				"title": "Remote Procedure Call Interface"
+			}
+		},
+		"required": [
+			"rpc_interface",
+			"flags"
+		],
+		"title": "DCE/RPC",
+		"type": "object"
+	}
+}
